@@ -1,0 +1,161 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newsletter </title>
+</head>
+
+<body>
+    <style>
+        body {
+    background: radial-gradient(100% 225% at 100% 0%, #ff0202 0%, #c02626 100%), linear-gradient(236deg, #00C2FF 0%, #000000 100%), linear-gradient(135deg, #CDFFEB 0%, #CDFFEB 36%, #009F9D 36%, #009F9D 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
+    background-blend-mode: overlay, hard-light, normal;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container div input:focus {
+    border-color: #ea0808;
+    outline: none;
+    animation: borderAnimation3 2s infinite;
+}
+
+@keyframes borderAnimation3 {
+    0% {
+        border-color: #ea0808;
+    }
+
+    33% {
+        border-color: #083aea;
+    }
+
+    66% {
+        border-color: #08ea08;
+    }
+
+    100% {
+        border-color: #ea0808;
+    }
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(125deg, #00FF57 0%, #010033 40%, #460043 70%, #F0FFC5 100%), linear-gradient(55deg, #0014C9 0%, #410060 100%), linear-gradient(300deg, #FFC700 0%, #001AFF 100%), radial-gradient(135% 215% at 115% 40%, #393939 0%, #393939 40%, #849561 calc(40% + 1px), #849561 60%, #EED690 calc(60% + 1px), #EED690 80%, #ECEFD8 calc(80% + 1px), #ECEFD8 100%), linear-gradient(125deg, #282D4F 0%, #282D4F 40%, #23103A calc(40% + 1px), #23103A 70%, #A0204C calc(70% + 1px), #A0204C 88%, #FF6C00 calc(88% + 1px), #FF6C00 100%);
+    background-blend-mode: overlay, screen, overlay, overlay, normal;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 350px;
+    width: 100%;
+}
+
+.title {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: #fff;
+  }
+  
+  .description {
+    line-height: 1.5rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: rgb(209 213 219);
+  }
+  
+
+.description a {
+    color: #ffffff;
+}
+
+.form div {
+    display: flex;
+    max-width: 28rem;
+    margin-top: 1rem;
+    column-gap: 0.5rem;
+}
+
+.form div input {
+    outline: none;
+    line-height: 1.5rem;
+    font-size: 0.875rem;
+    color: rgb(255 255 255 );
+    padding: 0.5rem 0.875rem;
+    background-color: rgb(255 255 255 / 0.05);
+    border: 1px solid rgba(253, 253, 253, 0.363);
+    border-radius: 0.375rem;
+    flex: 1 1 auto;
+  }
+  
+  .form div input::placeholder {
+    color: rgb(216, 212, 212);
+  }
+  
+  .form div input:focus {
+    border: 1px solid rgb(22, 25, 230);
+  }
+
+@keyframes borderAnimation {
+    0% {
+        border-color: #d008ea;
+    }
+
+    33% {
+        border-color: #f10303;
+    }
+
+    66% {
+        border-color: #088004;
+    }
+
+    100% {
+        border-color: #eadb08;
+    }
+}
+
+.form div input:focus+.underline {
+    transform: scaleX(1);
+}
+
+
+.form div button {
+    color: #030000;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding: 0.625rem 0.875rem;
+    background: linear-gradient(125deg, #FFFFFF 0%, #000000 100%), linear-gradient(200deg, #FFD9E8 0%, #FFD9E8 50%, #DE95BA calc(50% + 1px), #DE95BA 60%, #7F4A88 calc(60% + 1px), #7F4A88 75%, #4A266A calc(75% + 1px), #4A266A 100%), linear-gradient(113deg, #FFD9E8 0%, #FFD9E8 40%, #DE95BA calc(40% + 1px), #DE95BA 50%, #7F4A88 calc(50% + 1px), #7F4A88 70%, #4A266A calc(70% + 1px), #4A266A 100%);
+    background-blend-mode: overlay, overlay, normal;
+    border-radius: 0.375rem;
+    border: none;
+    outline: none;
+}
+    </style>
+    <div class="container">
+        <div class="form">
+            <form>
+                <span class="title">Subcribe To Our Newsletter.</span>
+                <p class="description">Get notified about every natural disasters around your area.
+                <div>
+                    <input class="input-box" placeholder="Enter your Name" type="text" name="name" id="name">
+                    <span class="underline"></span>
+                </div>
+                
+                <div>
+                    <input class="input-box" placeholder="Enter your email" type="email" name="email" id="email-address">
+                    <span class="underline"></span>
+                    <button type="submit">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
